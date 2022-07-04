@@ -1,0 +1,16 @@
+body {
+  margin: 0;
+}
+
+div.container {
+  display: flex; 
+}
+
+div.left {
+  max-height: 100vh;
+  overflow: hidden; /* to remove excess whitespace at the bottom of the div/page */
+}
+
+div.left > .leaves {
+  height: 100vh;
+}
