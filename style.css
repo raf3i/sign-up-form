@@ -2,6 +2,11 @@ body {
   margin: 0;
 }
 
+@font-face {
+  font-family: odin-custom;
+  src: url(./Norse-Bold.otf);
+}
+
 div.container {
   display: flex; 
 }
@@ -9,8 +14,31 @@ div.container {
 div.left {
   max-height: 100vh;
   overflow: hidden; /* to remove excess whitespace at the bottom of the div/page */
+  position: relative;
 }
 
-div.left > .leaves {
+div.left > img.leaves {
   height: 100vh;
+}
+
+div.left > div.bar {
+  position: absolute;
+  background-color: rgb(0, 0, 0, 0.5);
+  height: 25%;
+  width: 100%;
+  top: 27%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div.left > div.bar > h1.card-title {
+  color: white;
+  font-size: 120px;
+  font-family: odin-custom;
+  margin-left: 20px;
+}
+
+div.left > div.bar > img.odin-logo {
+  height: 180px;
 }
