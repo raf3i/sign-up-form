@@ -42,3 +42,26 @@ div.left > div.bar > h1.card-title {
 div.left > div.bar > img.odin-logo {
   height: 180px;
 }
+
+div.right > form {
+  background-color: rgb(246, 246, 246);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 60px;
+}
+
+div.right > form > div.inputs {
+  background-color: white;
+  padding: 20px;
+}
+
+div.fields {
+  display: flex;
+}
+
+div.field {
+  display: flex;
+  flex-direction: column;
+}
