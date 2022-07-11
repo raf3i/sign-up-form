@@ -2,6 +2,10 @@ body {
   margin: 0;
 }
 
+h2 {
+  margin: 0;
+}
+
 @font-face {
   font-family: odin-custom;
   src: url(./Norse-Bold.otf);
@@ -46,18 +50,52 @@ div.left > div.bar > img.odin-logo {
   height: 140px;
 }
 
+div.right {
+  --element-padding: 180px;
+  max-width: 67vw;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 div.right > form {
   background-color: rgb(246, 246, 246);
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 60px;
+  gap: 20px;
+}
+
+div.right > form > div.description,
+div.inputs,
+div.confirmation {
+  padding-left: var(--element-padding);
+  font-size: 1.1rem;
+}
+
+div.right > form > div.description {
+  padding-right: 320px;
+  padding-bottom: 30px;
 }
 
 div.right > form > div.inputs {
   background-color: white;
-  padding: 20px;
+  padding-top: 40px;
+  padding-bottom: 50px;
+}
+
+div.right > form > div.inputs > h2 {
+  margin-bottom: 30px;
+}
+
+label {
+  margin-bottom: 6px;
+}
+
+input {
+  border-radius: 5px;
+  height: 1.6rem;
+  font-size: 1.2rem;
+  border: 2px solid rgb(77, 77, 77);
 }
 
 div.fields {
@@ -67,4 +105,26 @@ div.fields {
 div.field {
   display: flex;
   flex-direction: column;
+  margin-right: 80px;
+  margin-bottom: 10px;
+}
+
+div.right > form > div.confirmation {
+  padding-top: 18px;
+}
+
+div.right > form > div.confirmation > button.create-account {
+  background-color: rgb(83, 109, 22);
+  color: white;
+  font-weight: bold;
+  font-size: 1.4rem;
+  border: none;
+  border-radius: 12px;
+  padding: 15px 30px;
+  cursor: pointer;
+}
+
+div.right > form > div.confirmation > p > a {
+  text-decoration: none;
+  color: green;
 }
