@@ -80,7 +80,7 @@ div.right > form > div.description {
 div.right > form > div.inputs {
   background-color: white;
   padding-top: 40px;
-  padding-bottom: 50px;
+  padding-bottom: 20px;
 }
 
 div.right > form > div.inputs > h2 {
@@ -98,8 +98,13 @@ input {
   border: 2px solid rgb(77, 77, 77);
 }
 
+input:focus {
+  outline: none;
+}
+
 div.fields {
   display: flex;
+  margin-bottom: 8px;
 }
 
 div.field {
@@ -107,6 +112,12 @@ div.field {
   flex-direction: column;
   margin-right: 80px;
   margin-bottom: 10px;
+}
+
+span.error {
+  height: 12px;
+  margin-top: 6px;
+  color: red;
 }
 
 div.right > form > div.confirmation {
@@ -128,3 +139,4 @@ div.right > form > div.confirmation > p > a {
   text-decoration: none;
   color: green;
 }
+

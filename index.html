@@ -28,36 +28,37 @@
           <div class="fields">
             <div class="field">
               <label for="firstname">First Name</label>
-              <input type="text" id="firstname">
+              <input type="text" id="firstname" required>
             </div>
 
             <div class="field">
               <label for="lastname">Last Name</label>
-              <input type="text" id="lastname">
+              <input type="text" id="lastname" required>
             </div>
           </div>
 
           <div class="fields">
             <div class="field">
-              <label for="email">Email</label>
-              <input type="email" id="email">
+              <label for="mail">Email</label>
+              <input type="email" id="mail" required>
             </div>
 
             <div class="field">
-              <label for="phonenumber">Phone Number</label>
-              <input type="number" id="phonenumber">
+              <label for="phone-number">Phone Number</label>
+              <input type="tel" inputmode="numeric" id="phone-number" required>
             </div>
           </div>
 
           <div class="fields">
             <div class="field">
               <label for="password1">Password</label>
-              <input type="password" id="password1">
+              <input type="password" id="password1" minlength="8" required>
             </div>
 
             <div class="field">
               <label for="password2">Confirm Password</label>
-              <input type="password" id="password2">
+              <input type="password" id="password2" minlength="8" required>
+              <span class="error"> </span>
             </div>
           </div>
         </div>
