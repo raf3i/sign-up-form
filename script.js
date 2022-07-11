@@ -18,5 +18,7 @@ function isMatching() {
     pass2.style.border = "2px solid red";
   } else {
     error.innerHTML = " ";
+    pass1.style.border = "2px solid rgb(77, 77, 77)";
+    pass2.style.border = "2px solid rgb(77, 77, 77)";
   }
 }
